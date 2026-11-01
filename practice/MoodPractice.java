@@ -4,7 +4,7 @@ public class MoodPractice {
         System.out.println(mood);
         System.out.println("mood");
 
-        mood = "Buon";
+        mood = "Binh thuong";
         System.out.println(mood);
 
         String note = "Hoc Java";
@@ -17,8 +17,10 @@ public class MoodPractice {
 
         if (mood.equals("Vui")) {
             System.out.println("Hom nay that tuyet");
+        } else if (mood.equals("Buon")) {
+            System.out.println("Hay nghi ngoi mot chut");
         } else {
-            System.out.println("Mong ban som vui hon");
+            System.out.println("Chuc ban mot ngay binh yen");
+        }
         }
     }
-}
