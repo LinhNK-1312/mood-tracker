@@ -15,8 +15,10 @@ public class MoodPractice {
 
         System.out.println("Cam xuc: " + mood + " | Ghi chu: " + note);
 
-        if (mood.equals("Buon")) {
-            System.out.println("Hay nghi ngoi mot chut");
+        if (mood.equals("Vui")) {
+            System.out.println("Hom nay that tuyet");
+        } else {
+            System.out.println("Mong ban som vui hon");
         }
     }
 }
