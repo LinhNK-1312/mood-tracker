@@ -4,7 +4,7 @@ public class MoodPractice {
         System.out.println(mood);
         System.out.println("mood");
 
-        mood = "Binh thuong";
+        mood = "Buon";
         System.out.println(mood);
 
         String note = "Hoc Java";
@@ -13,14 +13,21 @@ public class MoodPractice {
         note = "Da hieu bien";
         System.out.println(note);
 
+        printMoodSummary(mood, note);
+        String message = getMoodMessage(mood); // Nhận lời nhắn và lưu vào biến message
+        System.out.println("Loi nhan: " +message);          // In giá trị của message
+        }
+        static void printMoodSummary(String mood, String note) {
         System.out.println("Cam xuc: " + mood + " | Ghi chu: " + note);
+        }
 
+        static String getMoodMessage(String mood) { // MỞ phương thức trả về String
         if (mood.equals("Vui")) {
-            System.out.println("Hom nay that tuyet");
+            return "Hom nay that tuyet";
         } else if (mood.equals("Buon")) {
-            System.out.println("Hay nghi ngoi mot chut");
+            return "Hay nghi ngoi mot chut";
         } else {
-            System.out.println("Chuc ban mot ngay binh yen");
+            return "Chuc ban mot ngay binh yen";
         }
-        }
-    }
+    } // ĐÓNG phương thức getMoodMessage
+}
